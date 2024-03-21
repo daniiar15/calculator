@@ -1,5 +1,3 @@
-
-
 """
 Программа калькулятор...
 """
@@ -35,6 +33,7 @@ def input_number(step):
 
     return float(number)
 
+
 def solve(number_one, number_two, operation):
     result = None
 
@@ -44,12 +43,15 @@ def solve(number_one, number_two, operation):
         result = number_one - number_two
     elif operation == '*':
         result = number_one * number_two
-    else operation == '/':
+    else:
         result = number_one / number_two
+
     return result
 
-def print_solve(number_one, number_two, opration):
+
+def print_solve(number_one, number_two, operation, result):
     print(f'{number_one} {operation} {number_two} = {result}')
+
 
 def main():
     calc_info()
@@ -60,5 +62,5 @@ def main():
     print_solve(number_one, number_two, operation, result)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()
